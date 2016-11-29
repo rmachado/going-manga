@@ -7,10 +7,10 @@ import AppMenu from '../components/Menu';
 
 const containerStyle = {
   position: 'relative',
-  left: '256px',
-  width: '100%',
+  'padding-left': '256px',
   height: '100%',
-  overflow: 'auto'
+  overflow: 'auto',
+  'padding-top': '65px'
 };
 
 export default class App extends Component {
@@ -22,7 +22,7 @@ export default class App extends Component {
     return (
       <MuiThemeProvider muiTheme={darkTheme}>
         <div>
-          <AppBar title="Electron Manga" />
+          <AppBar title="Electron Manga" style={{ position: 'fixed' }} />
           <AppMenu />
           <div style={containerStyle}>
             {this.props.children}

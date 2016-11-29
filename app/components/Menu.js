@@ -14,9 +14,9 @@ const Icon = (name) => (<FontIcon className="material-icons">{name}</FontIcon>);
 const Menu = ({ open }) => (
   <Drawer open={open} containerStyle={forceNavDown}>
     <Subheader>Explora</Subheader>
-    <MenuItem leftIcon={Icon('dashboard')}>
-      <Link to="/" style={linkStyle}>Todos los mangas</Link>
-    </MenuItem>
+    <MenuItem
+      linkButton leftIcon={Icon('dashboard')} containerElement={<Link to="/" style={linkStyle} />}
+      primaryText="Todos los mangas" />
     <MenuItem leftIcon={Icon('view_list')}>
       <Link to="/updates" style={linkStyle}>Últimos actualizados</Link>
     </MenuItem>

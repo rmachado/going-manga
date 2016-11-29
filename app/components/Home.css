@@ -1,5 +1,7 @@
 .container {
-  background-color: #616161;
+  position: absolute;
+  top: 30%;
+  left: 10px;
   text-align: center;
 }
 
