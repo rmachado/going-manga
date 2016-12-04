@@ -22,7 +22,7 @@ export default class App extends Component {
     return (
       <MuiThemeProvider muiTheme={darkTheme}>
         <div>
-          <AppBar title="Electron Manga" style={{ position: 'fixed' }} />
+          <AppBar title="Going Manga" style={{ position: 'fixed' }} />
           <AppMenu />
           <div style={containerStyle}>
             {this.props.children}

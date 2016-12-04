@@ -154,7 +154,7 @@ export default class Home extends Component {
               actionIcon={<IconButton>
                 { Math.random() < 0.7 ? <StarBorder color="white" /> : <StarFull color="white" /> }
               </IconButton>}
-              containerElement={<Link to={tile.url}></Link>}
+              containerElement={<Link to="view"></Link>}
             >
               <img alt={tile.title} src={tile.img} style={styles.img} />
             </GridTile>

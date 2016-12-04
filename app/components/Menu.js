@@ -5,6 +5,7 @@ import MenuItem from 'material-ui/MenuItem';
 import Subheader from 'material-ui/Subheader';
 import Divider from 'material-ui/Divider';
 import FontIcon from 'material-ui/FontIcon';
+import Badge from 'material-ui/Badge';
 
 const forceNavDown = { top: '64px' };
 const linkStyle = { textDecoration: 'none', color: 'inherit' };
@@ -22,7 +23,7 @@ const Menu = ({ open }) => (
     </MenuItem>
     <Divider />
     <Subheader>Tu colección</Subheader>
-    <MenuItem leftIcon={Icon('star')}>
+    <MenuItem leftIcon={Icon('star')} rightIcon={<Badge badgeContent={4} primary />}>
       <Link to="/favorites" style={linkStyle}>Favoritos</Link>
     </MenuItem>
     <MenuItem leftIcon={Icon('watch_later')}>
